@@ -1,0 +1,143 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="coffe.css" />
+    <title>☕ OAT |Buy a coffe</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><b>OAT</b></a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="coffe.html">Buy a Coffee</a></li>
+        <details>
+          <summary>Login</summary>
+          <ul>
+            <li>Akun</li>
+            <li>Setting</li>
+            <li><a href="login.html">Logout</a></li>
+          </ul>
+        </details>
+      </ul>
+    </nav>
+    <div class="slider">
+      <div class="list">
+        <div class="item active">
+          <img src="img/banner.jpeg" alt="Espresso Coffee">
+          <div class="contents">
+            <p>OAT</p>
+            <h2>Espresso</h2>
+            <p>Espresso dengan susu kental manis buat harimu lebih menyenangkan </p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/banner.jpeg" alt="Mocha Coffee">
+          <div class="contents">
+            <p>OAT</p>
+            <h2>Mocha</h2>
+            <p>Coffee dengan latte gula aren buat hidupmu lebih berwarna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- button arrow -->
+     <div class="arrows">
+      <button id="prev" class="left"><</button>
+      <button id="next" class="right">></button>
+  </div>
+    <div class="main">
+      <div class="shop">
+        <div class="menu">
+          <img src="img/coffe.jpg" alt="Coffe Image">
+          <form action="pesanan.php" method="post">
+            <input type="hidden" id="counterValue" name="counterValue">
+            <input type="hidden" name="name" value="Coffe">
+            
+            <!-- Tombol Increment/Decrement -->
+            <button type="button" onclick="decrement(this)">-</button>
+            <input type="text" class="counter" value="0" readonly>
+            <button type="button" onclick="increment(this)">+</button>
+            
+            <!-- Tombol Add to Cart -->
+            <button type="submit" onclick="sendData(this)">Add to Cart</button>
+          </form>
+          <h3>Coffee</h3>
+          <p>Coffee dengan latte gula aren</p>
+          <h4>65.100 <s>93.000</s></h4>
+        </div>
+      <div class="menu">
+        <img src="img/coffe.jpg" alt="">
+        <form action="pesanan.php" method="post">
+          <input type="hidden" id="counterValue" name="counterValue">
+          <input type="hidden" name="name" value="Coffe">
+          
+          <!-- Tombol Increment/Decrement -->
+          <button type="button" onclick="decrement(this)">-</button>
+          <input type="text" class="counter" value="0" readonly>
+          <button type="button" onclick="increment(this)">+</button>
+          
+          <!-- Tombol Add to Cart -->
+          <button type="submit" onclick="sendData(this)">Add to Cart</button>
+        </form>
+        <h3>Coffe</h3>
+        <p>Coffe dengan latte gula aren</p>
+        <h4>65.100 <s>93.000</s></h4>
+    </div>
+    <div class="menu">
+      <img src="img/coffe.jpg" alt="">
+      <div class="counter-container">
+        <button id="minus" onclick="decrement()">-</button>
+        <input type="text" id="counter" name="counter" value="0" readonly>
+        <button id="plus" onclick="increment()">+</button>
+    </div>
+      <button>Add to cart</button>
+      <h3>Coffe</h3>
+      <p>Coffe dengan latte gula aren</p>
+      <h4>65.100 <s>93.000</s></h4>
+  </div>
+  <div class="menu">
+    <img src="img/coffe.jpg" alt="">
+    <div class="counter-container">
+      <button id="minus" onclick="decrement()">-</button>
+      <input type="text" id="counter" name="counter" value="0" readonly>
+      <button id="plus" onclick="increment()">+</button>
+  </div>
+    <button>Add to cart</button>
+    <h3>Coffe</h3>
+    <p>Coffe dengan latte gula aren</p>
+    <h4>65.100 <s>93.000</s></h4>
+</div>
+<div class="menu">
+  <img src="img/coffe.jpg" alt="">
+  <div class="counter-container">
+    <button id="minus" onclick="decrement()">-</button>
+    <input type="text" id="counter" name="counter" value="0" readonly>
+    <button id="plus" onclick="increment()">+</button>
+</div>
+  <button>Add to cart</button>
+  <h3>Coffe</h3>
+  <p>Coffe dengan latte gula aren</p>
+  <h4>65.100 <s>93.000</s></h4>
+</div>
+<div class="menu">
+  <img src="img/coffe.jpg" alt="">
+  <div class="counter-container">
+    <button id="minus" onclick="decrement()">-</button>
+    <input type="text" id="counter" name="counter" value="0" readonly>
+    <button id="plus" onclick="increment()">+</button>
+</div>
+  <button>Add to cart</button>
+  <h3>Coffe</h3>
+  <p>Coffe dengan latte gula aren</p>
+  <h4>65.100 <s>93.000</s></h4>
+</div>
+    </div>
+    <div class="cart"><a href=""><i class="uil uil-shopping-cart-alt"></i></a></div>
+  </body>
+  <script src="coffe.js"></script>
+</html>

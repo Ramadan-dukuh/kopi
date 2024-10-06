@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>.form{
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+.form h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+  }
+.form .form-element{
+    margin: 15px 0px;
+  }
+.form .form-element label{
+    font-size: 14px;
+    color: #777;
+  }
+.form .form-element input[type="email"],
+.form .form-element input[type="password"],
+.form .form-element input[type="text"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .password-toggle-icon {
+    position: absolute;
+    top: 229px;
+    right: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .password-toggle-icon i {
+    font-size: 18px;
+    line-height: 1;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .password-toggle-icon i:hover {
+    color: #000;
+  }
+.form .form-element input[type="email"]{
+    margin-right: 5px;
+  }
+.form .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background: #222;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .form .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .form .form-element p{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+  }
+.btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+</style>
+    <title>Edit User</title>
+</head>
+<body>
+    <h2>Edit User</h2>
+    <form action="updateRegis.php" method="POST">
+        <div class="form">
+
+            <input type="hidden" name="id" value="<?= $id; ?>">
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" value="<?= $username; ?>" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            
+            <button type="submit" class="btn">Update</button>
+            <button type="button" class="btn"><a href="admin.php">Back</a></button>
+        </div>
+    </form>
+</body>
+</html>
